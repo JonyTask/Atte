@@ -18,4 +18,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::middleware('auth')->group(function () {
+    Route::post('/start-work',[WorkController::class,'stampingStartWork']);
+    Route::post('/finish-work',[WorkController::class,'stampingFinishWork']);
+    Route::post('/start-rest',[WorkController::class,'stampingStartRest']);
+    Route::post('/finish-rest',[WorkController::class,'stampingFinishRest']);
+});
 Route::get('/',[WorkController::class,'showIndex']);

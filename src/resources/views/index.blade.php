@@ -9,25 +9,25 @@
         <h1 class="message_to_user">福場凛太朗さんお疲れ様です！</h1>
         <div class="conditions">
                 <div class="working_condition">
-                    <form action='' method='post'>
+                    <form action='/start-work' method='post'>
                         @csrf
                         <input class="working_condition_detail" type='submit' value="勤務開始">
                     </form>
                 </div>
                 <div class="working_condition">
-                    <form action='' method='post'>
+                    <form action='/finish-work' method='post'>
                         @csrf
                         <input class="working_condition_detail" type='submit' value="勤務終了">
                     </form>
                 </div>
                 <div class="working_condition">
-                    <form action='' method='post'>
+                    <form action='/start-rest' method='post'>
                         @csrf
                         <input class="working_condition_detail" type='submit' value="休憩開始">
                     </form>
                 </div>
                 <div class="working_condition">
-                    <form action='' method='post'>
+                    <form action='finish-rest' method='post'>
                         @csrf
                         <input class="working_condition_detail" type='submit' value="休憩終了">
                     </form>
