@@ -1,0 +1,40 @@
+
+.container{
+    width:85%;
+    margin:0 auto;
+}
+
+.date_controll{
+    text-align:center;
+    margin-top:50px;
+}
+
+.date_controll_view{
+    font-size:20px;
+    font-weight:bold;
+}
+
+.employee_worktime_table{
+    width:100%;
+    margin-top:50px;
+    border-collapse:collapse;
+}
+
+.name_title,
+.working_start_title,
+.working_finish_title,
+.rest_aggregation_title,
+.working_aggregation_title{
+    border-top:1px solid #333;
+    padding:20px 0;
+}
+
+.name_cell,
+.working_start,
+.working_finish,
+.rest_aggregation,
+.working_aggregation{
+    text-align:center;
+    padding:20px 0;
+    border-top:1px solid #333;
+}

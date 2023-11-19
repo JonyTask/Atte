@@ -1,0 +1,46 @@
+
+.login_title_block{
+    margin-top:40px;
+    margin-bottom:20px;
+    text-align:center;
+}
+
+.login_title{
+    font-size:25px;
+}
+
+.login_form{
+    width:30%;
+    margin:0 auto;
+}
+
+.form_input_item{
+    box-sizing:border-box;
+    width:100%;
+    padding:10px 15px;
+    margin-bottom:20px;
+    border-radius:10px;
+    outline:none;
+    border:1px solid #333;
+    font-family:sans-serif;
+}
+
+.login_submit{
+    width:100%;
+    padding:10px 15px;
+    border:none;
+    outline:none;
+    border-radius:10px;
+    background:blue;
+    color:#fff;
+}
+
+.attention_toRegister{
+    text-align:center;
+    margin-top:40px;
+}
+
+.register_link{
+    color:blue;
+    text-decoration:none;
+}

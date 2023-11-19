@@ -1,0 +1,46 @@
+body{
+    margin:0;
+    background:#dddcd6;
+}
+
+.header{
+    background:#fff;
+    position:relative;
+    height:100px;
+}
+
+.header-title{
+    display:inline-block;
+    height:60px;
+    position:absolute;
+    top:50%;
+    left:15%;
+    transform: translate(0,-50%);
+    font-size:25px;
+    font-weight:bold;
+}
+
+.header-links{
+    position:absolute;
+    top:50%;
+    right:10%;
+    transform:translate(0,-50%);
+}
+
+.header-links-lists{
+    display:flex;
+    list-style: none;
+}
+
+.header-links-lists-item{
+    margin-right:40px;
+    font-weight:bold;
+}
+
+.footer{
+    width:100%;
+    background:#fff;
+    text-align:center;
+    position:fixed;
+    bottom:0;
+}
