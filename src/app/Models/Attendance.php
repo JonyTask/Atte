@@ -7,5 +7,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Attendance extends Model
 {
-    use HasFactory;
+    public function getRests(){
+        return $this->hasMany('App\Models\Rest');
+    }
+
+    public function getUsers(){
+        return $this->belongsTo('App\Models\User');
+    }
 }
