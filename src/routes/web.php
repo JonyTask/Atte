@@ -14,10 +14,6 @@ use App\Http\Controllers\WorkController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-
 Route::middleware('auth')->group(function () {
     Route::post('/start-work',[WorkController::class,'stampingStartWork']);
     Route::post('/finish-work',[WorkController::class,'stampingFinishWork']);
