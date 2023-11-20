@@ -11,7 +11,7 @@
                 <div class="working_condition">
                     <form class="stamping_form" action='/start-work' method='post'>
                         @csrf
-                        <input class="working_condition_detail" type='submit' value="勤務開始">
+                        <input class="working_condition_detail" type='submit' value="勤務開始" {{ $stampStartWork ? '' : 'disabled' }}>
                     </form>
                 </div>
                 <div class="working_condition">

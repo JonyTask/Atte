@@ -13,9 +13,14 @@
         @if(Auth::check())
         <div class="header-links">
             <ul class="header-links-lists">
-                <li class="header-links-lists-item">ホーム</li>
-                <li class="header-links-lists-item">日付一覧</li>
-                <li class="header-links-lists-item">ログアウト</li>
+                <li class="header-links-lists-item"><a class="header-links-lists-hyperLink" href="/index">ホーム</a></li>
+                <li class="header-links-lists-item"><a class="header-links-lists-hyperLink" href="/attendance">日付一覧</a></li>
+                <li class="header-links-lists-item">
+                    <form action="/logout" method="post">
+                        @csrf
+                        <input class="logout-submit" type="submit" value="ログアウト">
+                    </form>
+                </li>
             </ul>
         </div>
         @endif

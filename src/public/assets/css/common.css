@@ -34,7 +34,21 @@ body{
 
 .header-links-lists-item{
     margin-right:40px;
+}
+
+.header-links-lists-hyperLink{
+    text-decoration:none;
+    color:#333;
     font-weight:bold;
+    font-size:15px;
+}
+
+.logout-submit{
+    outline:none;
+    border:none;
+    background:transparent;
+    font-weight:bold;
+    font-size:15px;
 }
 
 .footer{
