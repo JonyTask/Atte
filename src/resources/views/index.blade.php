@@ -17,19 +17,19 @@
                 <div class="working_condition">
                     <form class="stamping_form" action='/finish-work' method='post'>
                         @csrf
-                        <input class="working_condition_detail" type='submit' value="勤務終了">
+                        <input class="working_condition_detail" type='submit' value="勤務終了" {{ $stampFinishWork ? '' : 'disabled' }}>
                     </form>
                 </div>
                 <div class="working_condition">
                     <form class="stamping_form" action='/start-rest' method='post'>
                         @csrf
-                        <input class="working_condition_detail" type='submit' value="休憩開始">
+                        <input class="working_condition_detail" type='submit' value="休憩開始" {{ $stampStartRest ? '' : 'disabled' }}>
                     </form>
                 </div>
                 <div class="working_condition">
                     <form class="stamping_form" action='finish-rest' method='post'>
                         @csrf
-                        <input class="working_condition_detail" type='submit' value="休憩終了">
+                        <input class="working_condition_detail" type='submit' value="休憩終了" {{ $stampFinishRest ? '' : 'disabled' }}>
                     </form>
                 </div>
         </div>

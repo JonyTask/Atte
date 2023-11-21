@@ -10,10 +10,10 @@ class Attendance extends Model
     protected $fillable = ['user_id'];
 
     public function getRests(){
-        return $this->hasMany('App\Models\Rest');
+        return $this->hasMany(Rest::class);
     }
 
-    public function getUsers(){
-        return $this->belongsTo('App\Models\User');
+    public function user(){
+        return $this->belongsTo(User::class);
     }
 }

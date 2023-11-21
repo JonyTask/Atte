@@ -19,41 +19,15 @@
                 <th class="rest_aggregation_title">休憩時間</th>
                 <th class="working_aggregation_title">勤務時間</th>
             </tr>
+            @foreach($attendances as $attendance)
             <tr class="employee_line">
-                <td class="name_cell">テスト太郎</td>
-                <td class="working_start">10:00:00</td>
-                <td class="working_finish">20:00:00</td>
-                <td class="rest_aggregation">00:30:00</td>
-                <td class="working_aggregation">09:30:00</td>
+                <td class="name_cell">{{ $attendance->user->name }}</td>
+                <td class="working_start">{{ $attendance->start_work }}</td>
+                <td class="working_finish">{{ $attendance->finish_work }}</td>
+                <td class="rest_aggregation"></td>
+                <td class="working_aggregation"></td>
             </tr>
-            <tr class="employee_line">
-                <td class="name_cell">テスト次郎</td>
-                <td class="working_start">10:00:00</td>
-                <td class="working_finish">20:00:00</td>
-                <td class="rest_aggregation">00:30:00</td>
-                <td class="working_aggregation">09:30:00</td>
-            </tr>
-            <tr class="employee_line">
-                <td class="name_cell">テスト三郎</td>
-                <td class="working_start">10:00:00</td>
-                <td class="working_finish">20:00:00</td>
-                <td class="rest_aggregation">00:30:00</td>
-                <td class="working_aggregation">09:30:00</td>
-            </tr>
-            <tr class="employee_line">
-                <td class="name_cell">テスト四郎</td>
-                <td class="working_start">10:00:00</td>
-                <td class="working_finish">20:00:00</td>
-                <td class="rest_aggregation">00:30:00</td>
-                <td class="working_aggregation">09:30:00</td>
-            </tr>
-            <tr class="employee_line">
-                <td class="name_cell">テスト五郎</td>
-                <td class="working_start">10:00:00</td>
-                <td class="working_finish">20:00:00</td>
-                <td class="rest_aggregation">00:30:00</td>
-                <td class="working_aggregation">09:30:00</td>
-            </tr>
+            @endforeach
         </table>
     </div>
 @endsection

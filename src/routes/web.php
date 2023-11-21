@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WorkController;
+use App\Http\Controllers\AttendanceController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,5 @@ Route::middleware('auth')->group(function () {
     Route::post('/start-rest',[WorkController::class,'stampingStartRest']);
     Route::post('/finish-rest',[WorkController::class,'stampingFinishRest']);
 });
+
+Route::get('/attendance',[AttendanceController::class,'showAttendance']);
