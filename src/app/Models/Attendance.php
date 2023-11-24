@@ -9,7 +9,7 @@ class Attendance extends Model
 {
     protected $fillable = ['user_id'];
 
-    public function getRests(){
+    public function rest(){
         return $this->hasMany(Rest::class);
     }
 

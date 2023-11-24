@@ -23,4 +23,4 @@ Route::middleware('auth')->group(function () {
     Route::post('/finish-rest',[WorkController::class,'stampingFinishRest']);
 });
 
-Route::get('/attendance',[AttendanceController::class,'showAttendance']);
+Route::get('/attendance',[AttendanceController::class,'showAttendance'])->name('attendance.list');

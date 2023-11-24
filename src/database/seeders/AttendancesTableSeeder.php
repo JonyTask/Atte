@@ -15,34 +15,34 @@ class AttendancesTableSeeder extends Seeder
     public function run()
     {
         $param = [
-            'user_id' => 1,
-            'work_date'=>'2023-10-20',
-            'start_work'=>'2023-10-20 18:00:00',
-            'finish_work'=>'2023-10-20 23:30:00',
-        ];
-        DB::table('attendances')->insert($param);
-
-        $param = [
-            'user_id' => 2,
-            'work_date'=>'2023-10-20',
-            'start_work'=>'2023-10-20 13:00:00',
-            'finish_work'=>'2023-10-20 19:30:00',
-        ];
-        DB::table('attendances')->insert($param);
-
-        $param = [
             'user_id' => 3,
-            'work_date'=>'2023-10-20',
-            'start_work'=>'2023-10-20 15:00:00',
-            'finish_work'=>'2023-10-20 21:00:00',
+            'work_date'=>'2023-11-24',
+            'start_work'=>'2023-11-24 18:00:00',
+            'finish_work'=>'2023-11-24 23:30:00',
         ];
         DB::table('attendances')->insert($param);
 
         $param = [
             'user_id' => 4,
-            'work_date'=>'2023-10-20',
-            'start_work'=>'2023-10-20 10:00:00',
-            'finish_work'=>'2023-10-20 18:00:00',
+            'work_date'=>'2023-11-24',
+            'start_work'=>'2023-11-24 13:00:00',
+            'finish_work'=>'2023-11-24 19:30:00',
+        ];
+        DB::table('attendances')->insert($param);
+
+        $param = [
+            'user_id' => 5,
+            'work_date'=>'2023-11-24',
+            'start_work'=>'2023-11-24 15:00:00',
+            'finish_work'=>'2023-11-24 21:00:00',
+        ];
+        DB::table('attendances')->insert($param);
+
+        $param = [
+            'user_id' => 6,
+            'work_date'=>'2023-11-24',
+            'start_work'=>'2023-11-24 10:00:00',
+            'finish_work'=>'2023-11-24 18:00:00',
         ];
         DB::table('attendances')->insert($param);
     }
