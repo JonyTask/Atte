@@ -13,7 +13,7 @@
         @if(Auth::check())
         <div class="header-links">
             <ul class="header-links-lists">
-                <li class="header-links-lists-item"><a class="header-links-lists-hyperLink" href="/index">ホーム</a></li>
+                <li class="header-links-lists-item"><a class="header-links-lists-hyperLink" href="/">ホーム</a></li>
                 <li class="header-links-lists-item"><a class="header-links-lists-hyperLink" href="/attendance">日付一覧</a></li>
                 <li class="header-links-lists-item">
                     <form action="/logout" method="post">

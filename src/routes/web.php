@@ -3,6 +3,9 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WorkController;
 use App\Http\Controllers\AttendanceController;
+use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\LoginController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -15,12 +18,14 @@ use App\Http\Controllers\AttendanceController;
 |
 */
 
+Route::post('/register',[RegisterController::class,'EnactRegister']);
+Route::post('/login',[LoginController::class,'EnactLogin']);
+
 Route::middleware('auth')->group(function () {
     Route::get('/',[WorkController::class,'showIndex']);
     Route::post('/start-work',[WorkController::class,'stampingStartWork']);
     Route::post('/finish-work',[WorkController::class,'stampingFinishWork']);
     Route::post('/start-rest',[WorkController::class,'stampingStartRest']);
     Route::post('/finish-rest',[WorkController::class,'stampingFinishRest']);
+    Route::get('/attendance',[AttendanceController::class,'showAttendance'])->name('attendance.list');
 });
-
-Route::get('/attendance',[AttendanceController::class,'showAttendance'])->name('attendance.list');

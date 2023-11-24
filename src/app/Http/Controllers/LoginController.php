@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Http\Requests\LoginRequest;
 
 class LoginController extends Controller
 {
-    public function IntroLoginPage(){
-        return view('auth.login');
+    public function EnactLogin(LoginRequest $request){
+        return redirect('/');
     }
 }

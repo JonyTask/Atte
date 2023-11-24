@@ -14,15 +14,22 @@
     margin:0 auto;
 }
 
+.input_area{
+    margin-bottom:20px;
+}
+
 .form_input_item{
     box-sizing:border-box;
     width:100%;
     padding:10px 15px;
-    margin-bottom:20px;
     border-radius:10px;
     outline:none;
     border:1px solid #333;
     font-family:sans-serif;
+}
+
+.error_message{
+    color:red;
 }
 
 .login_submit{
