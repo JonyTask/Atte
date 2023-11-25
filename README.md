@@ -12,3 +12,7 @@
 2. PHP 8.2.0
 3. nginx 1.21.1
 4. Laravel 8.83.27
+
+##打刻画面
+<img width="500" alt="スクリーンショット 2023-11-25 190415" src="https://github.com/JonyTask/Atte/assets/136244515/53745e31-7171-4ee2-a119-31334508047c">
+
