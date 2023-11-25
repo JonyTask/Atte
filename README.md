@@ -13,10 +13,16 @@
 3. nginx 1.21.1
 4. Laravel 8.83.27
 
+
+
 ##打刻画面</br>
 <img width="800" alt="スクリーンショット 2023-11-25 190415" src="https://github.com/JonyTask/Atte/assets/136244515/53745e31-7171-4ee2-a119-31334508047c">
+
+
 
 ##管理画面</br>
 <img width="800" alt="スクリーンショット 2023-11-25 190248" src="https://github.com/JonyTask/Atte/assets/136244515/146a7038-d826-4c77-a71f-a3f3733f1fd9">
 
-##ER図
+
+##ER図</br>
+<img width="800" src="https://github.com/JonyTask/Atte/assets/136244515/f3a10a20-3271-4447-8343-f73a03f7fda9")
