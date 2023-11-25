@@ -23,9 +23,12 @@ class WorkController extends Controller
             if($onRest){
                 $nowOnRest = true;
             }
+            $start_work_bool = $attendance->start_work;
+            $finish_work_bool = $attendance->finish_work;
+        }else{
+            $start_work_bool = null;
+            $finish_work_bool = null;
         }
-        $start_work_bool = $attendance->start_work;
-        $finish_work_bool = $attendance->finish_work;
         $userName=$user->name;
         return view('index',compact('userName','attendance','nowOnRest','start_work_bool','finish_work_bool'));
     }

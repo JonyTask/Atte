@@ -18,8 +18,6 @@ use App\Http\Controllers\LoginController;
 |
 */
 
-Route::post('/register',[RegisterController::class,'EnactRegister']);
-Route::post('/login',[LoginController::class,'EnactLogin']);
 
 Route::middleware('auth')->group(function () {
     Route::get('/',[WorkController::class,'showIndex']);
