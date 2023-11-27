@@ -11,7 +11,7 @@
     <form class="register_form" action="/register" method="post">
         @csrf
         <div class="input_area">
-            <input type="text" class="form_input_item" name="name" placeholder="名前">
+            <input type="text" class="form_input_item" name="name" placeholder="名前" value="{{old('name')}}">
             <p class="error_message">
                 @error('name')
                     {{$message}}
@@ -19,7 +19,7 @@
             </p>
         </div>
         <div class="input_area">
-            <input type="email" class="form_input_item" name="email" placeholder="メールアドレス">
+            <input type="email" class="form_input_item" name="email" placeholder="メールアドレス" value="{{old('email')}}">
             <p class="error_message">
                 @error('email')
                     {{$message}}
@@ -27,7 +27,7 @@
             </p>
         </div>
         <div class="input_area">
-            <input type="password" class="form_input_item" name="password" placeholder="パスワード">
+            <input type="password" class="form_input_item" name="password" placeholder="パスワード" value="{{old('password')}}">
             <p class="error_message">
                 @error('password')
                     {{$message}}
@@ -35,7 +35,7 @@
             </p>
         </div>
         <div class="input_area">
-            <input type="password" class="form_input_item" name="password_confirmation" placeholder="確認用パスワード">
+            <input type="password" class="form_input_item" name="password_confirmation" placeholder="確認用パスワード" value="{{old('password_confirmation')}}">
             <p class="error_message">
                 @error('password_confirmation')
                     {{$message}}
