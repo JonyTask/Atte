@@ -23,7 +23,7 @@
             </tr>
             @foreach($attendances as $attendance)
             <tr class="employee_line">
-                <td class="name_cell">{{ $attendance->user->name }}</td>
+                <td class="name_cell"><a href="{{ route('each.user',['user'=> $attendance->user->name ]) }}">{{ $attendance->user->name }}</a></td>
                 <td class="working_start">{{ $attendance->start_work }}</td>
                 <td class="working_finish">{{ $attendance->finish_work }}</td>
                 <td class="rest_aggregation">{{ $attendance->total_rest }}</td>

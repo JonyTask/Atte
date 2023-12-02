@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\WorkController;
 use App\Http\Controllers\AttendanceController;
 use App\Http\Controllers\RestController;
-use App\Http\Controllers\AuthController;
+use App\Http\Controllers\UserDivideController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -24,4 +24,5 @@ Route::middleware('auth')->group(function () {
     Route::post('/start-rest',[RestController::class,'stampingStartRest']);
     Route::post('/finish-rest',[RestController::class,'stampingFinishRest']);
     Route::get('/attendance',[AttendanceController::class,'showAttendance'])->name('attendance.list');
+    Route::get('/attendance/eachUser',[UserDivideController::class,'EachUserView'])->name('each.user');
 });
