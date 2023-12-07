@@ -1,7 +1,7 @@
 # Atte 勤怠管理アプリ
 
-<p font-size="35px">本番環境  ついに私もデプロイ経験ありと言えるわけです。</p>
-http://3.27.7.7
+**本番環境  ついに私もデプロイ経験ありと言えるわけです。**
+**http://3.27.7.7**
 
 ##環境構築方法
 1. git clone git@github.com:JonyTask/Atte.git
