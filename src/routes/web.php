@@ -17,7 +17,7 @@ use App\Http\Controllers\UserDivideController;
 */
 
 
-Route::middleware('auth')->group(function () {
+Route::middleware(['auth'])->group(function () {
     Route::get('/',[WorkController::class,'showIndex']);
     Route::post('/start-work',[WorkController::class,'stampingStartWork']);
     Route::post('/finish-work',[WorkController::class,'stampingFinishWork']);
