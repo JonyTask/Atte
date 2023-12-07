@@ -25,9 +25,8 @@ class RegisterRequest extends FormRequest
     public function rules()
     {
         return [
-            Fortify::username() => 'required|string',
             'name'=>['required','string','max:191'],
-            'email'=>['required','unique','email','max:191'],
+            'email'=>['required','unique:users','email','max:191'],
             'password'=>['required','min:8','max:191']
         ];
     }
