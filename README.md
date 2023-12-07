@@ -1,5 +1,8 @@
 # Atte 勤怠管理アプリ
 
+#本番環境  ついに私もデプロイ経験ありと言えるわけです。
+http://3.27.7.7
+
 ##環境構築方法
 1. git clone git@github.com:JonyTask/Atte.git
 2. docker-compose up -d --build コンテナのビルド
