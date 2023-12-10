@@ -5,12 +5,13 @@
 
 ##環境構築方法
 1. git clone git@github.com:JonyTask/Atte.git
-2. docker-compose up -d --build コンテナのビルド
-3. phpコンテナ内で、composer update
-4. .envファイルを適宜書き換え
-5. phpコンテナ内で、php artisan key:generate  アプリケーションキーの作成
-6. php artisan migrate:fresh
-7. php artisan db:seed ※12/10の勤怠のダミーデータが6件
+2. mysqlディレクトリ内でdataディレクトリを作成してください
+3. docker-compose up -d --build コンテナのビルド
+4. phpコンテナ内で、composer update
+5. .envファイルを適宜書き換え
+6. phpコンテナ内で、php artisan key:generate  アプリケーションキーの作成
+7. php artisan migrate:fresh
+8. php artisan db:seed ※12/10の勤怠のダミーデータが6件
 
 ##バージョン情報
 1. Docker 24.0.6
