@@ -10,7 +10,7 @@
 4. .envファイルを適宜書き換え
 5. phpコンテナ内で、php artisan key:generate  アプリケーションキーの作成
 6. php artisan migrate:fresh
-7. php artisan db:seed ※11/24の勤怠のダミーデータが6件
+7. php artisan db:seed ※12/10の勤怠のダミーデータが6件
 
 ##バージョン情報
 1. Docker 24.0.6
